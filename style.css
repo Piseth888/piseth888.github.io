@@ -9,30 +9,17 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
     color: #222;
     line-height: 1.6;
-    overflow-x: auto;
 }
 
-/* Wrapper for horizontal scrolling on small devices */
-.cv-wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
-
-/* =========================
-   MAIN CONTAINER
-========================= */
 .cv-container {
     width: 1200px;
-    min-width: 1200px;
     margin: 30px auto;
     background: #fff;
     display: flex;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
 }
 
-/* =========================
-   LEFT SIDE
-========================= */
+/* LEFT SIDE */
 .left-side {
     width: 35%;
     background: #4c5264;
@@ -55,9 +42,8 @@ body {
 .profile h1 {
     font-size: 42px;
     line-height: 48px;
-    font-weight: 700;
-    letter-spacing: 1px;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .profile p {
@@ -67,7 +53,7 @@ body {
 
 hr {
     border: none;
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255,255,255,0.5);
     margin: 40px 0;
 }
 
@@ -92,15 +78,11 @@ hr {
     margin-right: 10px;
 }
 
-/* =========================
-   RIGHT SIDE
-========================= */
+/* RIGHT SIDE */
 .right-side {
     width: 65%;
-    background: #fff;
     padding: 45px 55px;
     font-size: 15px;
-    line-height: 1.7;
 }
 
 .block {
@@ -113,7 +95,6 @@ hr {
     padding: 10px 15px;
     margin-bottom: 20px;
     font-size: 24px;
-    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -123,8 +104,7 @@ hr {
 
 .item h3 {
     font-size: 19px;
-    color: #222;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .item p {
@@ -147,31 +127,22 @@ hr {
     line-height: 1.7;
 }
 
-/* =========================
-   LINKS
-========================= */
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* =========================
-   PRINT
-========================= */
 @media print {
     body {
         background: #fff;
-        overflow: visible;
     }
 
     .cv-container {
-        width: 100%;
-        min-width: auto;
         box-shadow: none;
-        margin: 0;
+        margin: 0 auto;
     }
 }
