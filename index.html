@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional CV</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ececec;
+    font-family:'Poppins',sans-serif;
+    padding:30px;
+}
+
+.cv{
+
+    width:1100px;
+    margin:auto;
+    background:#fff;
+
+    display:grid;
+    grid-template-columns:300px 1fr;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+/* LEFT SIDE */
+
+.sidebar{
+
+    padding:35px;
+    border-right:2px solid #d8d8d8;
+
+}
+
+.photo{
+
+    width:180px;
+    height:180px;
+
+    margin:0 auto 35px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+}
+
+.photo img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.sidebar section{
+
+    margin-bottom:35px;
+
+}
+
+.sidebar h3{
+
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+    padding-bottom:8px;
+
+    border-bottom:2px solid #cfcfcf;
+
+}
+
+.contact{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:15px;
+
+    color:#555;
+    font-size:15px;
+
+}
+
+.links{
+
+    color:#666;
+    font-size:14px;
+    margin-top:10px;
+
+}
+
+.sidebar strong{
+
+    display:block;
+    margin-bottom:6px;
+
+}
+
+.sidebar p{
+
+    margin-bottom:6px;
+    color:#555;
+    line-height:1.5;
+
+}
+
+.sidebar ul{
+
+    margin-left:18px;
+
+}
+
+.sidebar li{
+
+    margin-bottom:8px;
+    line-height:1.5;
+
+}
+
+
+/* RIGHT */
+
+.content{
+
+    padding:40px;
+
+}
+
+header{
+
+    margin-bottom:40px;
+
+}
+
+header h1{
+
+    font-size:50px;
+    letter-spacing:4px;
+
+}
+
+header h2{
+
+    margin-top:10px;
+
+    color:#777;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-weight:300;
+
+}
+
+.title{
+
+    display:flex;
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+.title span{
+
+    width:70px;
+    height:4px;
+
+    background:#000;
+
+}
+
+.title div{
+
+    width:220px;
+    height:2px;
+
+    background:#444;
+
+}
+
+.content section{
+
+    margin-bottom:35px;
+
+}
+
+.content h3{
+
+    font-size:22px;
+
+    letter-spacing:3px;
+
+    padding-bottom:8px;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #cfcfcf;
+
+}
+
+.content p{
+
+    color:#444;
+
+    line-height:1.8;
+
+}
+
+.job{
+
+    margin-bottom:25px;
+
+}
+
+.job h4{
+
+    font-size:20px;
+    margin-bottom:3px;
+
+}
+
+.job span{
+
+    color:#777;
+    display:block;
+    margin-bottom:10px;
+
+}
+
+.job ul{
+
+    margin-left:20px;
+
+}
+
+.job li{
+
+    margin-bottom:8px;
+    line-height:1.6;
+
+}
+
+.content ul{
+
+    margin-left:20px;
+
+}
+
+.content li{
+
+    margin-bottom:8px;
+    line-height:1.6;
+
+}
+
+@media(max-width:1150px){
+
+.cv{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:850px){
+
+.cv{
+
+    grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+    border-right:none;
+    border-bottom:2px solid #ddd;
+
+}
+
+header h1{
+
+    font-size:38px;
+
+}
+
+header h2{
+
+    font-size:18px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cv">
+
+    <aside class="sidebar">
+
+        <div class="photo">
+            <img src="https://i.pravatar.cc/300?img=15">
+        </div>
+
+        <section>
+
+            <h3>CONTACT</h3>
+
+            <div class="contact">
+                <i class="fa-solid fa-envelope"></i>
+                rahul.sharma@example.com
+            </div>
+
+            <div class="contact">
+                <i class="fa-solid fa-phone"></i>
+                +91 93456 78900
+            </div>
+
+            <div class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                New Delhi, India
+            </div>
+
+            <div class="links">
+                GitHub |
+                LinkedIn |
+                Portfolio
+            </div>
+
+        </section>
+
+        <section>
+
+            <h3>EDUCATION</h3>
+
+            <strong>Bachelor of Technology</strong>
+
+            <p>Computer Science</p>
+
+            <p>IIT Delhi</p>
+
+            <p>Graduated: May 2017</p>
+
+        </section>
+
+        <section>
+
+            <h3>KEY SKILLS</h3>
+
+            <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Django</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>MongoDB</li>
+                <li>REST APIs</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h3>HOBBIES</h3>
+
+            <ul>
+                <li>Open Source</li>
+                <li>Hackathons</li>
+                <li>Coding Challenges</li>
+            </ul>
+
+        </section>
+
+    </aside>
+
+
+    <main class="content">
+
+        <header>
+
+            <h1>RAHUL SHARMA</h1>
+
+            <h2>Senior Software Developer</h2>
+
+            <div class="title">
+                <span></span>
+                <div></div>
+            </div>
+
+        </header>
+
+        <section>
+
+            <h3>PROFESSIONAL SUMMARY</h3>
+
+            <p>
+                Innovative and detail-oriented Software Developer with over
+                five years of experience building scalable web applications,
+                optimizing performance and creating clean, maintainable code.
+                Experienced in JavaScript, Python, React, Node.js and AWS,
+                delivering enterprise-level solutions while mentoring junior
+                developers.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h3>PROFESSIONAL EXPERIENCE</h3>
+
+            <div class="job">
+
+                <h4>Senior Software Developer</h4>
+
+                <span>TechNova Inc. (2020 - Present)</span>
+
+                <ul>
+                    <li>Developed enterprise-scale web applications.</li>
+                    <li>Improved performance by 25%.</li>
+                    <li>Migrated legacy systems to AWS Cloud.</li>
+                    <li>Mentored five junior developers.</li>
+                </ul>
+
+            </div>
+
+            <div class="job">
+
+                <h4>Software Developer</h4>
+
+                <span>Innovatech Solutions (2017 - 2020)</span>
+
+                <ul>
+                    <li>Built scalable microservice architecture.</li>
+                    <li>Integrated third-party APIs.</li>
+                    <li>Automated repetitive tasks using Python.</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h3>ACHIEVEMENTS & CERTIFICATIONS</h3>
+
+            <ul>
+                <li>AWS Certified Solutions Architect</li>
+                <li>Microsoft Azure Fundamentals</li>
+                <li>Winner - Hackathon 2023</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
