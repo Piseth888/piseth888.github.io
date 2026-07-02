@@ -1,507 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chhoueng Piseth Digital CV</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    background:#ececec;
-    font-family:'Poppins',sans-serif;
-    padding:30px;
-}
-
-.cv{
-
-    width:1100px;
-    margin:auto;
-    background:#fff;
-
-    display:grid;
-    grid-template-columns:300px 1fr;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-
-}
-
-/* LEFT SIDE */
-
-.sidebar{
-
-    padding:35px;
-    border-right:2px solid #d8d8d8;
-
-}
-
-.photo{
-
-    width:180px;
-    height:180px;
-
-    margin:0 auto 35px;
-
-    border-radius:50%;
-    overflow:hidden;
-
-}
-
-.photo img{
-
-    width:100%;
-    height:100%;
-    object-fit:cover;
-
-}
-
-.sidebar section{
-
-    margin-bottom:35px;
-
-}
-
-.sidebar h3{
-
-    font-size:22px;
-    font-weight:600;
-    letter-spacing:3px;
-
-    margin-bottom:15px;
-    padding-bottom:8px;
-
-    border-bottom:2px solid #cfcfcf;
-
-}
-
-.contact{
-
-    display:flex;
-    align-items:center;
-    gap:12px;
-
-    margin-bottom:15px;
-
-    color:#555;
-    font-size:15px;
-
-}
-
-.links{
-
-    color:#666;
-    font-size:14px;
-    margin-top:10px;
-
-}
-
-.sidebar strong{
-
-    display:block;
-    margin-bottom:6px;
-
-}
-
-.sidebar p{
-
-    margin-bottom:6px;
-    color:#555;
-    line-height:1.5;
-
-}
-
-.sidebar ul{
-
-    margin-left:18px;
-
-}
-
-.sidebar li{
-
-    margin-bottom:8px;
-    line-height:1.5;
-
-}
-
-
-/* RIGHT */
-
-.content{
-
-    padding:40px;
-
-}
-
-header{
-
-    margin-bottom:40px;
-
-}
-
-header h1{
-
-    font-size:50px;
-    letter-spacing:4px;
-
-}
-
-header h2{
-
-    margin-top:10px;
-
-    color:#777;
-
-    letter-spacing:5px;
-
-    text-transform:uppercase;
-
-    font-weight:300;
-
-}
-
-.title{
-
-    display:flex;
-    align-items:center;
-
-    margin-top:20px;
-
-}
-
-.title span{
-
-    width:70px;
-    height:4px;
-
-    background:#000;
-
-}
-
-.title div{
-
-    width:220px;
-    height:2px;
-
-    background:#444;
-
-}
-
-.content section{
-
-    margin-bottom:35px;
-
-}
-
-.content h3{
-
-    font-size:22px;
-
-    letter-spacing:3px;
-
-    padding-bottom:8px;
-
-    margin-bottom:15px;
-
-    border-bottom:2px solid #cfcfcf;
-
-}
-
-.content p{
-
-    color:#444;
-
-    line-height:1.8;
-
-}
-
-.job{
-
-    margin-bottom:25px;
-
-}
-
-.job h4{
-
-    font-size:20px;
-    margin-bottom:3px;
-
-}
-
-.job span{
-
-    color:#777;
-    display:block;
-    margin-bottom:10px;
-
-}
-
-.job ul{
-
-    margin-left:20px;
-
-}
-
-.job li{
-
-    margin-bottom:8px;
-    line-height:1.6;
-
-}
-
-.content ul{
-
-    margin-left:20px;
-
-}
-
-.content li{
-
-    margin-bottom:8px;
-    line-height:1.6;
-
-}
-
-/* ==========================
-   Desktop Only
-========================== */
-
-.mobile-only{
-    display:none;
-}
-
-@media screen and (max-width:1023px){
-
-    body{
-        margin:0;
-        padding:0;
-        background:#f5f5f5;
-        overflow:hidden;
-    }
-
-    .cv{
-        display:none;
-    }
-
-    .mobile-only{
-        display:flex;
-        position:fixed;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        justify-content:center;
-        align-items:center;
-        background:#fff;
-        z-index:999999;
-        text-align:center;
-        padding:30px;
-    }
-
-    .mobile-box{
-        max-width:450px;
-    }
-
-    .mobile-box i{
-        font-size:80px;
-        color:#444;
-        margin-bottom:20px;
-    }
-
-    .mobile-box h1{
-        font-size:32px;
-        margin-bottom:15px;
-    }
-
-    .mobile-box p{
-        color:#666;
-        line-height:1.8;
-        font-size:18px;
-    }
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhoueng Piseth CV</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
 
-<div class="cv">
+<div class="cv-container">
 
-    <aside class="sidebar">
+    <!-- LEFT SIDE -->
+    <div class="left-side">
 
-        <div class="photo">
-            <img src="https://i.pravatar.cc/300?img=15">
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile">
+            <h1>CHHOUENG<br>PISETH</h1>
+            <p>Website Developer</p>
         </div>
 
-        <section>
+        <hr>
 
-            <h3>CONTACT</h3>
+        <div class="section">
+            <h2>ABOUT ME</h2>
+            <p>
+                Experienced Web Developer with several years of experience
+                in designing, developing, and maintaining web applications.
+                Proficient in PHP, CodeIgniter, MySQL, JavaScript, HTML,
+                CSS, and WordPress.
+            </p>
+        </div>
 
-            <div class="contact">
-                <i class="fa-solid fa-envelope"></i>
-                chhouengpiseth@gmail.com
-            </div>
-
-            <div class="contact">
-                <i class="fa-solid fa-phone"></i>
-                088 8017700
-            </div>
-
-            <div class="contact">
-                <i class="fa-solid fa-location-dot"></i>
-                Cambodia, Phnom Penh
-            </div>
-
-            <div class="links">
-                GitHub |
-                LinkedIn |
-                Portfolio
-            </div>
-
-        </section>
-
-        <section>
-
-            <h3>EDUCATION</h3>
-
-            <strong>Bachelor of Technology</strong>
-
-            <p>Computer Science</p>
-
-            <p>IIT Delhi</p>
-
-            <p>Graduated: May 2017</p>
-
-        </section>
-
-        <section>
-
-            <h3>KEY SKILLS</h3>
-
-            <ul>
-                <li>JavaScript (ES6+)</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Django</li>
-                <li>Docker</li>
-                <li>AWS</li>
-                <li>MongoDB</li>
-                <li>REST APIs</li>
-            </ul>
-
-        </section>
-
-        <section>
-
-            <h3>HOBBIES</h3>
-
-            <ul>
-                <li>Open Source</li>
-                <li>Hackathons</li>
-                <li>Coding Challenges</li>
-            </ul>
-
-        </section>
-
-    </aside>
-
-
-    <main class="content">
-
-        <header>
-
-            <h1>RAHUL SHARMA</h1>
-
-            <h2>Senior Software Developer</h2>
-
-            <div class="title">
-                <span></span>
-                <div></div>
-            </div>
-
-        </header>
-
-        <section>
-
-            <h3>PROFESSIONAL SUMMARY</h3>
+        <div class="section">
+            <h2>PERSONAL INFORMATION</h2>
 
             <p>
-                Innovative and detail-oriented Software Developer with over
-                five years of experience building scalable web applications,
-                optimizing performance and creating clean, maintainable code.
-                Experienced in JavaScript, Python, React, Node.js and AWS,
-                delivering enterprise-level solutions while mentoring junior
-                developers.
+                <i class="fa-solid fa-calendar"></i>
+                Date of Birth: <b>26 / June / 1993</b>
             </p>
 
-        </section>
+            <p>
+                <i class="fa-solid fa-ring"></i>
+                Marital Status: <b>Married</b>
+            </p>
 
-        <section>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Place of Birth:
+                <b>
+                    Lor Village Prey Krosang Commune,
+                    Sameakki Mean Chey District,
+                    Kampong Speu
+                </b>
+            </p>
+        </div>
 
-            <h3>PROFESSIONAL EXPERIENCE</h3>
+        <div class="section">
+            <h2>CONTACT</h2>
 
-            <div class="job">
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                070 202 391 / 088 801 7700
+            </p>
 
-                <h4>Senior Software Developer</h4>
+            <p>
+                <i class="fa-brands fa-telegram"></i>
+                070 202 391
+            </p>
 
-                <span>TechNova Inc. (2020 - Present)</span>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                chhouengpiseth@email.com
+            </p>
 
-                <ul>
-                    <li>Developed enterprise-scale web applications.</li>
-                    <li>Improved performance by 25%.</li>
-                    <li>Migrated legacy systems to AWS Cloud.</li>
-                    <li>Mentored five junior developers.</li>
-                </ul>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                St Sony 81, No48, Sangkat
+                Stoeung Mean Chey,
+                Khan Mean Chey
+            </p>
+        </div>
 
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-side">
+
+        <div class="block">
+            <h2>EDUCATION BACKGROUND</h2>
+
+            <div class="item">
+                <h3>Graduated in Information Technology</h3>
+                <p>Royal University of Phnom Penh (RUPP) | 2011 - 2015</p>
             </div>
 
-            <div class="job">
-
-                <h4>Software Developer</h4>
-
-                <span>Innovatech Solutions (2017 - 2020)</span>
-
-                <ul>
-                    <li>Built scalable microservice architecture.</li>
-                    <li>Integrated third-party APIs.</li>
-                    <li>Automated repetitive tasks using Python.</li>
-                </ul>
-
+            <div class="item">
+                <h3>Graduated in General Knowledge</h3>
+                <p>Chan Thnal High School | 2008 - 2011</p>
             </div>
+        </div>
 
-        </section>
-
-        <section>
-
-            <h3>ACHIEVEMENTS & CERTIFICATIONS</h3>
+        <div class="block">
+            <h2>OTHER TRAINING</h2>
 
             <ul>
-                <li>AWS Certified Solutions Architect</li>
-                <li>Microsoft Azure Fundamentals</li>
-                <li>Winner - Hackathon 2023</li>
+                <li>Certificate of New Headway Intermediate at PPI-USL (2013)</li>
+                <li>Certificate of Computer Maintenance at VTC Center (2012)</li>
+                <li>Certificate of MS-Access at CIS (2009)</li>
             </ul>
+        </div>
 
-        </section>
+        <div class="block">
+            <h2>WORKING EXPERIENCE</h2>
 
-    </main>
+            <div class="item">
+                <h3>Website designing, developing and support</h3>
+                <p>LBNGROUP CO., LTD | 2019 - Present</p>
+
+                <ul>
+                    <li>Developing websites using CodeIgniter.</li>
+                    <li>Designing and customizing websites using WordPress.</li>
+                    <li>Install software and Windows OS.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>Website Designing</h3>
+                <p>PTM Travel | 2018 - 2019</p>
+
+                <ul>
+                    <li>Design frontend website using CodeIgniter.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>Website Designing</h3>
+                <p>Web Marketing Business Cambodia | 2016 - 2018</p>
+
+                <ul>
+                    <li>Designing and customizing websites using WordPress.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="block">
+            <h2>TECHNICAL SKILLS</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript / jQuery</li>
+                <li>Bootstrap</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>CodeIgniter</li>
+                <li>WordPress</li>
+                <li>GitHub</li>
+                <li>Adobe Audition</li>
+                <li>Movavi Video Editor</li>
+                <li>Photoshop</li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h2>PROJECTS</h2>
+
+            <ul>
+                <li>http://lbngroups.com</li>
+                <li>https://lbnasian.com</li>
+                <li>http://bhlangkor.com</li>
+                <li>http://dev.lbnasian.com</li>
+                <li>GoMission (Ongoing)</li>
+                <li>DATA SUM BOT : Auto calculate transaction in Telegram</li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h2>LANGUAGES</h2>
+
+            <ul>
+                <li>Khmer - Mother tongue</li>
+                <li>English - Good</li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h2>HOBBIES</h2>
+
+            <ul>
+                <li>Tiktok content creator (AI researcher)</li>
+                <li>Electronics customization</li>
+                <li>Mobile software experimentation</li>
+                <li>Social media</li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h2>REFERENCES</h2>
+
+            <p>
+                <strong>Human Resources at Agri-Farmer Cambodia</strong><br>
+                Heng Srey Oun (070 202 308)
+            </p>
+        </div>
+
+    </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
